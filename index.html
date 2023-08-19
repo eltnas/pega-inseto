@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata Inseto</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+
+</head>
+<body>
+    <section id="game-start">
+        <div class="game-load">
+            <h2 class="text-center text-uppercase">Mata Insetos</h2><hr/>
+            <button id="start">Iniciar?</button>
+        </div>
+    </section>
+
+    <section id="game-select">
+        <div class="game-load">
+            <h2 class="text-center">Selecione o Inseto</h2>
+
+            <ul class="lista">
+                <li>
+                    <button class="btn-inseto" id="aranha">
+                        <p>Aranha</p>
+                        <img src="./assets/Image/aranha.png" alt="Aranha" />
+                    </button>
+                </li>
+                <li>
+                    <button class="btn-inseto" id="barata">
+                        <p>Barata</p>
+                        <img src="./assets/Image/barata.png" alt="Barata" />
+                    </button>
+                </li>
+                <li>
+                    <button class="btn-inseto" id="escorpiao">
+                        <p>Escorpião</p>
+                        <img src="./assets/Image/escorpiao.png" alt="Escorpião" />
+                    </button>
+                </li>
+                <li>
+                    <button class="btn-inseto" id="pernilongo">
+                        <p>Pernilongo</p>
+                        <img src="./assets/Image/pernilongo.png" alt="Pernilongo" />
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="game-container">
+        <div id="score">
+            <h3 id="tempo"></h3>
+            <h3 id="placar"></h3>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Detetizador &copy;<a href='https://eltnas.github.io/'>Elton C. Nascimento</a></p>
+    </footer>
+
+    <script src="./assets/js/game.js"></script>
+</body>
+</html>

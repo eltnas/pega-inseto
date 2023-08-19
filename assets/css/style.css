@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #9FC131;
+  margin: 1rem 0;
+}
+
+body {
+  background-color: #005C53;
+  width: 100vw;
+  height: 100vh;
+}
+body #game-start {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+body #game-start .game-load {
+  width: 70%;
+  max-width: 450px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+body #game-start .game-load hr {
+  width: 90%;
+  color: #9FC131;
+}
+body #game-start .game-load button {
+  width: 15rem;
+  height: 45%;
+  font-size: 3rem;
+  margin: 10px;
+  background-color: #042940;
+  color: #9FC131;
+}
+body #game-start .game-load button:hover {
+  background-color: #9FC131;
+  color: #042940;
+}
+body #game-select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: none;
+  place-items: center;
+}
+body #game-select .game-load {
+  height: 70vh;
+  width: 90%;
+}
+body #game-select .game-load ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body #game-select .game-load ul li {
+  list-style: none;
+  display: inline;
+  margin: 15px 10px;
+  width: 120px;
+  height: 120px;
+}
+body #game-select .game-load ul li button {
+  background-color: #005C53;
+  color: #9FC131;
+}
+body #game-select .game-load ul li button:hover {
+  background-color: #042940;
+}
+body #game-select .game-load ul li button p {
+  font-size: 1.3rem;
+}
+body #game-select .game-load ul li button img {
+  width: 100px;
+  height: 100px;
+}
+body #game-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: none;
+}
+body #game-container #score {
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body #game-container #score h3 {
+  font-size: 1rem;
+  color: #9FC131;
+}
+body #game-container .shwInseto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+body #game-container .shwInseto.caught {
+  transform: translate(-50%, -50%) scale(0);
+}
+body #game-container .shwInseto img {
+  width: 100px;
+  height: 100px;
+}
+
+footer {
+  width: 100%;
+  height: 20px;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  background-color: #D6D58E;
+  color: #000;
+}
+footer p {
+  font-size: 0.9em;
+}
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */
