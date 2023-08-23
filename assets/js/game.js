@@ -37,12 +37,12 @@ function contaTempo() {
     m = m < 10 ? `0${m}` : m;
     s = s < 10 ? `0${s}` : s;
     timeEl.innerHTML = `Tempo: <span id="time">${m}:${s}</span>`;
-    pontoEl.innerHTML = `Humano <span id="human">${pontos[0]}</span> X <span id="insect">${pontos[1]}</span> Insetos`
+    pontoEl.innerHTML = `Insetos Mortos <span id="human">${pontos[0]}</span>`
     sec++;
     if (sec >= 301) { 
         clearInterval(intervalID);
         clearInterval(insetosIntervalID);
-        console.log("Tempo de jogo esgotado!");
+        Alert("Acabou o tempo! Insetos Mortos ${pontos[0]}");
     }
 }
 
@@ -72,7 +72,6 @@ function startInsetosInterval() {
 
     insetosIntervalID = setInterval(() => {
         if (document.querySelectorAll('.shwInseto:not(.pego)').length === 0) {
-            insetosCount *= 2;
             if (insetosCount >= 32) {
                 insetosCount = 32;
             }
@@ -81,6 +80,10 @@ function startInsetosInterval() {
             }
         }
     }, 2000);
+
+    lvlInsetosID = setInterval(() =>{
+        lvlInsetos();
+    }, 10000)
 }
 
 function rdmLocal() {
@@ -111,4 +114,8 @@ function pontosH() {
 
 function pontosI() {
     pontos[1]++;
+}
+
+function lvlInsetos() {
+    insetosCount *= 2;
 }
