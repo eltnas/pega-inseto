@@ -42,7 +42,7 @@ function contaTempo() {
     if (sec >= 301) { 
         clearInterval(intervalID);
         clearInterval(insetosIntervalID);
-        Alert("Acabou o tempo! Insetos Mortos ${pontos[0]}");
+        alert("Acabou o tempo! Insetos Mortos " + pontos[0]);
     }
 }
 
